@@ -1,10 +1,36 @@
-﻿namespace MethodsExercise
+﻿using System;
+
+namespace MethodsExercise
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello, what is your name?");
+            var name = Console.ReadLine();
+
+            Console.WriteLine($"Nice to meet you, {name}. What is your favorite animal?");
+            var favAnimal = Console.ReadLine();
+
+            Console.WriteLine($"{favAnimal}? Interesting choice. What about your favorite color? What might that be?");
+            var color = Console.ReadLine();
+
+            Console.WriteLine($"{color} is a great color! Do you happen to have a favorite artist or band?");
+            var band = Console.ReadLine();
+
+            int amountOfToys = Sum(5, 6);
+            int amountOfClothes = Multiply(3, 7, 9);
+        }
+
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+
+        public static int Multiply(int num1, int num2, int num3)
+        {
+            return num1 * num2 * num3;
         }
     }
 }
