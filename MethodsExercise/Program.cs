@@ -18,8 +18,8 @@ namespace MethodsExercise
             Console.WriteLine($"{color} is a great color! Do you happen to have a favorite artist or band?");
             var band = Console.ReadLine();
 
-            int amountOfToys = Sum(5, 6);
-            int amountOfClothes = Multiply(3, 7, 9);
+            Console.WriteLine(Sum(3, 3));
+            Console.WriteLine(Multiply(5, 6, 3));
         }
 
         public static int Sum(int num1, int num2)
